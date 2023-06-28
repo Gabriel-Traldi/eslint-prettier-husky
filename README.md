@@ -1,34 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Projeto Next.js com Eslint, Prettier, Husky e Lint-Staged
 
-## Getting Started
+O objetivo deste projeto é demonstrar o funcionamento das ferramentas Eslint, Prettier, Husky e Lint-Staged, que são amplamente utilizadas para padronização de código, formatação automática e verificação de qualidade em projetos JavaScript.
 
-First, run the development server:
+## Sobre o Projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Este repositório foi criado com o propósito de apresentar as funcionalidades do Eslint, Prettier, Husky e Lint-Staged e como eles podem ser integrados a um projeto Next.js.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Este projeto utiliza as seguintes ferramentas:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Eslint**: O Eslint é uma ferramenta de análise estática que ajuda a identificar e reportar problemas de qualidade de código. Ele pode ser configurado com regras personalizadas para garantir que o código siga um padrão específico.
 
-## Learn More
+- **Prettier**: O Prettier é um formatador de código que ajuda a manter uma formatação consistente em todo o projeto. Ele pode ser configurado com regras de formatação personalizadas, como espaçamento, quebras de linha, etc.
 
-To learn more about Next.js, take a look at the following resources:
+- **Husky**: O Husky é uma ferramenta que permite a execução de scripts antes de determinados eventos do Git, como commits e pushes. Isso permite a execução automática de tarefas, como a verificação de qualidade de código, antes de enviar as alterações para o repositório remoto.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Lint-Staged**: O Lint-Staged é uma ferramenta que permite a execução de scripts apenas nos arquivos modificados em um determinado commit. Isso é útil para evitar a execução de tarefas demoradas em todo o código do projeto. No caso deste projeto, o Lint-Staged é utilizado para executar o Eslint e o Prettier apenas nos arquivos alterados antes de fazer um commit.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Configuração e Utilização
 
-## Deploy on Vercel
+Para configurar e utilizar este projeto em sua máquina local, siga as etapas abaixo:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone este repositório em sua máquina:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   git clone https://github.com/gabriel-traldi/eslint-prettier-husky.git
+   ```
+
+2. Navegue até o diretório do projeto:
+
+   ```bash
+   cd eslint-prettier-husky
+   ```
+
+3. Instale as dependências do projeto:
+
+   ```bash
+   npm install
+   ```
+
+4. Execute o projeto em modo de desenvolvimento:
+
+   ```bash
+   npm run dev
+   ```
+
+Durante o desenvolvimento, as ferramentas Eslint, Prettier, Husky e Lint-Staged já estão configuradas para funcionar automaticamente. Ao fazer um commit das alterações, o Husky executará as tarefas de verificação de qualidade de código e formatação automaticamente.
