@@ -26,7 +26,8 @@
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.2.0",
     "eslint": "^8.43.0",
-    "prettier-plugin-tailwindcss": "^0.3.0",
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.3",
+    "prettier-plugin-tailwindcss": "^0.3.0"
   }
 }
